@@ -20,18 +20,18 @@ public class Order {
      */
     public void addItem(Product product, double quantity) {
         //edit starts here
-
+        Item newItem = new Item(new Product("123", "Mt.Dew", 300.50), 4);
+        items.add(newItem);
         //edit ends here
     }
 
 
     /**
      * Remove an item from a given index.
-     * @param index
      */
     public void removeItem(int index){
         //edit starts here
-
+        items.remove(index);
         //edit ends here
     }
 
@@ -42,7 +42,7 @@ public class Order {
      */
     public double getTotalQuantity() {
         //edit starts here
-        return 0; //please remove
+        return getTotalQuantity();
         //edit ends here
     }
 
@@ -52,7 +52,8 @@ public class Order {
      */
     public double getGrandTotal() {
         //edit starts here
-        return 0; //please remove
+        double value = items.size();
+        return value;
         //edit ends here
     }
 }
